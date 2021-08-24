@@ -18,6 +18,7 @@ const Todo = () => {
 
     return (
         <div>
+            <h1>Hello World !</h1>
             <h3>Todo List</h3>
             <TodoCreate onCreateTodo={eventCreateTodo}/>
             <TodoList dataTodos={getTodos}/>
