@@ -1,14 +1,31 @@
 import './App.css';
-import Todo from "./components/todo/Todo";
+import Navbar from './comps/navbar';
+import Footer from './comps/footer';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './home';
+import About from './about';
+import Business from './business';
 
-const App = () => {
+function App() {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
-      <h2>Iam Adi Kusuma</h2>
-      <Todo />
-    </div>
-  )
+    <Router>
+       <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Home />  
+          </Route> 
+          <Route exact path="/about">
+            <About />  
+          </Route> 
+          <Route exact path="/business">
+            <Business />  
+          </Route> 
+        </Switch>
+       <Footer />
+    </Router>
+   
+  );
 }
 
-export default App
+
+export default App;
