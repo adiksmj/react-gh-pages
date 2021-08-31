@@ -15,6 +15,21 @@ const Home = () => {
         <ProdukInfo />
         <ReviewItems />
       </div>
+      <style jsx>{`
+      .content {
+        max-width: 80%;
+        margin: 0 auto;
+      }
+      
+      .Parentbox {
+        width: 80%;
+        overflow: hidden;
+        margin: auto;
+        margin-top: 50px;
+      }
+      `}
+
+      </style>
     </>
      );
 }

@@ -30,10 +30,51 @@ function ReviewItems() {
           </div>
     );
     return (
+     <> 
       <div className="Review-box">
         <h2>Reviews</h2>
         {listReview}
       </div>
+      <style jsx>{`
+        .Review-box {
+          clear: both;
+          width: 100%;
+          overflow: hidden;
+          padding-bottom: 100px;
+        }
+        
+        .Review-box h2 {
+          margin-top: 50px;
+        }
+        
+        .Review-box img {
+          width: 80px;
+          height: 80px;
+          background: white;
+          border-radius: 12px;
+          float: left;
+          margin-right: 16px;
+        }
+        
+        .Review-box .User p,
+        h3 {
+          margin: 0;
+        }
+        
+        .Review-box .User h3 {
+          padding-top: 10px;
+          margin-bottom: 8px;
+        }
+        
+        .Review-box .Item {
+          width: 80%;
+          overflow: hidden;
+          margin-bottom: 24px;
+          margin-top: 30px;
+        }
+        
+      `}</style>
+     </>
     )
   }
 
