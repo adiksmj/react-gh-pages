@@ -22,6 +22,10 @@ const Navbar = () => {
                 align-items: center;
                 border-bottom: 1px solid #ddd;
                 height: 50px;
+                position: fixed;
+                left: 0px;
+                top: 0px;
+                width: 100%;
             }
             
             nav a {

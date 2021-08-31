@@ -13,7 +13,7 @@ const Business = () => {
             <style jsx>{`
                 .content {
                     max-width: 80%;
-                    margin: 0 auto;
+                    margin: 200px auto;
                 }
             `}
             </style>

@@ -16,7 +16,7 @@ function ProdukInfo(props) {
           width: 40%;
           overflow: hidden;
           float: left;
-          margin-left: 30px;
+          margin-left: 80px;
         }
         
         .Deskripsi .Info {
